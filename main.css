@@ -1,0 +1,126 @@
+:root {
+    --gray: #C8C6C6;
+    --red: #CD1818;  
+    --white: #FFFFFF;  
+  }
+  
+
+body{
+    display: grid;
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+    height: 100vh;
+    margin: 0;
+    place-items:center;
+}
+
+.modal {
+    align-items: center;
+    background: var(--red);
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 360px;
+}
+
+.main-image {
+    margin-top: -112px;
+    width: 314px;
+}
+
+.title {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    margin-top: 0;
+
+}
+
+.subtitle {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom:32px;
+    margin-top: 0;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    position: relative;
+    width: 100%;
+}
+
+.gray-stars-container img {
+    width: 42px;
+}
+
+.yellow-stars-container {
+    cursor: pointer;
+    font-size: 37px;
+    left: 45px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+}
+.comment-box label {
+    color: var(--white);
+    display: inline-block;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.comment-box textarea {
+    background: none;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 16px;
+    color: var(--white);
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    height: 80px;
+    margin-bottom: 24px;
+    padding: 12px;
+    width: 100%;
+}
+
+.comment-box textarea::placeholder{
+    color:var(--gray);
+}
+
+.submit-button {
+    background: var(--white);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 8px;
+    width: 100%;
+    z-index: 10;
+}
+
+.hidden {
+    display:none;
+}
+
+.comment-box{
+    height: 0;
+}
+
+.visible {
+    display: inline-block;
+    animation: visible 0.3s ease-in-out forwards;
+}
+
+@keyframes visible {
+    from {
+        height: 0;
+    }
+    to {
+        height: 138px;
+    }
+}
